@@ -1,0 +1,7 @@
+{
+  "name": "suSiparisApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

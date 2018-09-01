@@ -1,0 +1,28 @@
+<!--
+  Generated template for the TelefonGirisPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="text-article">Telefon Numarası Ekleme</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content" padding>
+
+    <ion-list class="contain-items">
+
+        <ion-item color="seffaf" class="text-input">
+          <ion-input [(ngModel)]="tel_no" type="text" placeholder="Telefon Numarası(0 5XX XXX XX XX )"></ion-input>
+        </ion-item>
+      
+        <button style="margin-top: 10%;" class="btn-bt1" ion-button full (click)="onayKoduClicked()">
+            Onay Kodu Al</button>
+      </ion-list>
+
+</ion-content>

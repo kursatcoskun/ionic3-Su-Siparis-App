@@ -1,0 +1,74 @@
+<!--
+  Generated template for the ProfilOlusturmaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="text-article">Adres Bilgileri</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content" padding>
+
+    <ion-item style="margin-top: 15%;" color="seffaf" class="text-input">
+        <ion-input [(ngModel)]="ad" type="text" placeholder="Ad"></ion-input>
+      </ion-item>
+
+      <ion-item color="seffaf" class="text-input">
+        <ion-input [(ngModel)]="soyad" type="text" placeholder="Soyad"></ion-input>
+      </ion-item>
+
+  <div>
+    <ion-item style="color: black;" color="seffaf">
+        <ion-label>Şehir</ion-label>
+        <ion-select [(ngModel)]="sehir" [selectOptions]="sehirOpt">
+          <ion-option>Eskişehir</ion-option>
+
+        </ion-select>
+      </ion-item>
+    
+
+      <ion-item style="color: black;" color="seffaf">
+          <ion-label>Semt</ion-label>
+          <ion-select [(ngModel)]="semt" [selectOptions]="semtOpt">
+            <ion-option>Odunpazarı</ion-option>
+            <ion-option>Tepebaşı</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item style="color: black;" color="seffaf">
+            <ion-label class="adresOpt">Mahalle</ion-label>
+            <ion-select [(ngModel)]="mahalle" [selectOptions]="mahalleOpt">
+              <ion-option>Yenibağlar Mahallesi</ion-option>
+              <ion-option>Eskibağlar Mahallesi</ion-option>
+              <ion-option>Büyükdere Mahallesi</ion-option>
+              <ion-option>Osmangazi Mahallesi</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item style="color: black;" color="seffaf">
+              <ion-label>Sokak</ion-label>
+              <ion-select [(ngModel)]="sokak" [selectOptions]="sokakOpt">
+                <ion-option>Mehmet Osman Sokak</ion-option>
+                <ion-option>Büyükdere Sokak</ion-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item color="seffaf" class="text-input">
+                <ion-input [(ngModel)]="apartman" type="text" placeholder="Apartman No"></ion-input>
+              </ion-item>
+
+              <ion-item color="seffaf" class="text-input">
+                  <ion-input [(ngModel)]="kapi" type="text" placeholder="Kapı No"></ion-input>
+                </ion-item>
+
+      
+          <button style="margin-top: 10%;" class="btn-bt1" ion-button full (click)="adresClicked()">
+              Kaydet</button>
+  </div>
+</ion-content>

@@ -1,11 +1,31 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+    <ion-title style="font-family: 'centurygothic' !important; text-align: center;">Ürünler</ion-title>
+    <ion-searchbar placeholder="Arayacağınız ürünün ismini giriniz..." style="margin-top: 10%;" (ionInput)="getItems($event)"></ion-searchbar>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <ion-card *ngFor="let urun of uruns" class="urunler-card">
+        <button (click)="urunClicked()" ion-item>
+        <img class="urun-img" [src]="urun.image">
+          <ion-card-header [innerHTML]="urun.title" class="text-h">
+          </ion-card-header>
+          <ion-card-content [innerHTML]="urun.description" class="txt-content">
+          </ion-card-content>
+        </button>
+        <ion-item class="txt-content">
+            <ion-label>Adet</ion-label>
+            <ion-select class="select-c" [(ngModel)]="adet">
+              <ion-option value="1">1</ion-option>
+              <ion-option value="2">2</ion-option>
+              <ion-option value="3">3</ion-option>
+              <ion-option value="4">4</ion-option>
+              <ion-option value="5">5</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+
+        
 
 </ion-content>

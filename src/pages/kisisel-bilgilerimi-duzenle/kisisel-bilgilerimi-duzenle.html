@@ -1,0 +1,33 @@
+<!--
+  Generated template for the KisiselBilgilerimiDuzenlePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Bilgilerimi Düzenle</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-item style="margin-top: 40%;" color="seffaf" class="text-input">
+        <ion-input [(ngModel)]="ad" type="text" placeholder="Ad"></ion-input>
+      </ion-item>
+
+      <ion-item color="seffaf" class="text-input">
+          <ion-input [(ngModel)]="soyad" type="text" placeholder="Soyad"></ion-input>
+        </ion-item>
+
+        <ion-item color="seffaf" class="text-input">
+            <ion-input [(ngModel)]="tel_no" type="text" placeholder="Telefon Numarası"></ion-input>
+          </ion-item>
+
+          <button style="margin-top: 10%;" class="btn-bt1" ion-button full (click)="degistirClicked()">
+              Bilgilerimi Değiştir</button>
+
+</ion-content>

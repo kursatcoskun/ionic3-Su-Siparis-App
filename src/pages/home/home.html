@@ -1,17 +1,53 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title style="text-align: center; font-family: 'centurygothic' !important;">Anasayfa</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="logout()">
+          <ion-icon name="ios-log-out-outline"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+    <ion-slides class="slides" pager>
+        <ion-slide class="slide-home" *ngFor="let slide of slides">
+          <img [src]="slide.image" class="slide-image"/>
+
+          <ion-buttons class="bt-sol">
+              <button color="turkuaz" ion-button icon-only (click)="backToSlide()">
+                <ion-icon name='md-arrow-back'></ion-icon>
+              </button>
+            </ion-buttons>
+
+            <ion-buttons class="bt-sag">
+                <button color="turkuaz" ion-button icon-only (click)="goToSlide()">
+                  <ion-icon name='md-arrow-forward'></ion-icon>
+                </button>
+              </ion-buttons>
+          
+        
+          <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+          <p [innerHTML]="slide.description"></p>
+          <button style="margin-top: 10%;" class="btn-bt1" ion-button (click)="siparisClicked()">
+              Sipariş Ver</button>
+        </ion-slide>
+
+        <ion-slide class="slide-last">
+          
+          <img src="../../assets/imgs/damacana3.png" class="slide-image2"/>
+          <h2 class="slide-title" style="text-align: center;">Daha fazla ürün görmek için</h2>
+          <ion-buttons class="bt-sol">
+            <button color="turkuaz" ion-button icon-only (click)="backToSlide()">
+              <ion-icon name='md-arrow-back'></ion-icon>
+            </button>
+          </ion-buttons>
+          <button ion-button large clear icon-end color="primary" (click)="devamClicked()">
+            Devam
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+          
+        </ion-slide>
+        
+      </ion-slides>
 </ion-content>

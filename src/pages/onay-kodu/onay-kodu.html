@@ -1,0 +1,28 @@
+<!--
+  Generated template for the OnayKoduPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="text-article">Onay Kodu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content" padding>
+
+    <ion-list class="contain-items">
+
+        <ion-item color="seffaf" class="text-input">
+          <ion-input [(ngModel)]="onayKodu" type="text" placeholder="Onay Kodu"></ion-input>
+        </ion-item>
+      
+        <button style="margin-top: 10%;" class="btn-bt1" ion-button full (click)="onaylaClicked()">
+            Onayla</button>
+      </ion-list>
+
+</ion-content>

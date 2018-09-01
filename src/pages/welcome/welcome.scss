@@ -1,0 +1,57 @@
+page-welcome {
+    @font-face{
+        font-family: Avalon;
+        src: url(../../../www/assets/fonts/TR_Avalon_Plain.ttf);
+    }
+    @font-face{
+        font-family: roboto;
+        src: url(../../../www/assets/fonts/roboto-regular.ttf);
+    }
+    @font-face{
+        font-family: centurygothic;
+        src: url(../../../www/assets/fonts/centurygothic.ttf);
+    }
+
+    
+}
+
+.content-page{
+    background: url('../../assets/imgs/02gausswater.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.container{
+    margin-top: 25%;
+    width: 100%;
+    z-index: 0;
+}
+.img-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    width: 100%;
+    z-index: 1;
+}
+.text-title{
+    font-weight: bold;
+    font-family: "centurygothic" !important;
+    text-align: center
+
+}
+.text-article{
+    font-family: "centurygothic" !important;
+    text-align: center;
+
+}
+.btn-bt1{
+    text-transform: none;
+    font-family: "centurygothic" !important;
+    font-weight: bold;
+    z-index: 1;
+    border-radius: 5px;
+    //background-image: radial-gradient(circle, #051937, #113364, #204f95, #2f6dc8, #3f8cff);
+    background: #00aeff;
+}

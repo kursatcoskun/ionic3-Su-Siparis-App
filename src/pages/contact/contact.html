@@ -1,17 +1,68 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+    <ion-title class="profil-header">Profilim</ion-title>
+   
+    <img src="../../assets/imgs/pp.png" class="pp-im">
+    <ion-label class="profile-name">Kürşat Coşkun</ion-label>
+
+    <ion-buttons class="button-p">
+        <button ion-button icon-end (click)="duzenleClicked()">
+          Düzenle
+          <ion-icon name="ios-create-outline"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons class="button-p2">
+          <button ion-button icon-end (click)="logout()">
+            Çıkış Yap
+            <ion-icon name="ios-log-out-outline"></ion-icon>
+          </button>
+        </ion-buttons>
   </ion-navbar>
+
+  
+
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+
+                <ion-card class="profil-card">
+                      <ion-card-header class="text-h">
+                          
+                          <ion-icon name="md-mail" item-start></ion-icon>
+                        İletişim Bilgilerim
+                      </ion-card-header>
+                      <ion-card-content class="txt-content">
+                        Telefon Numarası: 0544 459 83 11
+                      </ion-card-content>
+                    </ion-card>
+        
+                    <ion-card>
+                        <ion-list>
+                          <button ion-item (click)="siparislerimClicked()">
+                            <ion-icon name="md-basket" item-start></ion-icon>
+                            Siparişlerim
+                          </button>
+                        </ion-list>
+                      </ion-card>
+
+                      <ion-card>
+                          <ion-list>
+                            <button ion-item (click)="adreslerimClicked()">
+                              <ion-icon name="md-book" item-start></ion-icon>
+                              Adreslerim
+                            </button>
+                          </ion-list>
+                        </ion-card>
+            
+        
+
+                      
+
+              
+            
+        
+             
+
+      
+
 </ion-content>

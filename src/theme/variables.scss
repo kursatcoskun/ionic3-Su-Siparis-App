@@ -39,6 +39,7 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
+  mavi: royalblue,
   seffaf: rgba(0, 0, 0, 0.0),
   gri: grey,
   turkuaz: #00aeff
@@ -65,9 +66,9 @@ $segment-button-ios-background-color-activated: black;
 
 @font-face{
   font-family: centurygothic;
-  src: url(../../www/assets/fonts/centurygothic.ttf), url(../../www/assets/fonts/centurygothic.woff);
+  src:url(../assets/fonts/centurygothic.ttf) format("ttf"), url(../assets/fonts/centurygothic.woff) format("woff");
 }
-
+$font-family-base: "centurygothic";
 $font-family-md-base: "centurygothic";
 $font-family-ios-base:"centurygothic";
 

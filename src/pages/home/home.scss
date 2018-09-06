@@ -47,6 +47,12 @@ page-home {
     margin-top: 5%;
     font-size: 1.1em;
   }
+  .slide-title2{
+    display: block;
+    font-family: 'centurygothic' !important;
+    margin-top: 25%;
+    font-size: 1.1em;
+  }
 
   .slide-image {
     max-height: 55%;
@@ -58,7 +64,13 @@ page-home {
     max-height: 55%;
     max-width: 55%;
 }
-
+.buton-back{
+  display: block;
+  position: absolute;
+  left: 0px;
+  margin-top: 21%;
+  text-transform: none;
+}
   b {
       font-family: 'centurygothic' !important;
     font-weight: 500;
